@@ -12,4 +12,4 @@
 
 Соц. сеть: ссылка на соц. сеть
 
-Документація до шаблону: https://template.fls.guru/template-docs 
+Документация по шаблону: https://template.fls.guru/template-docs 
