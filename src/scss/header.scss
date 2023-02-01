@@ -1,30 +1,107 @@
 //====================================================================================================
+.menu {
+	position: relative;
+	@media (max-width: $mobile) {
+		height: 90px;
+	}
 
+	&__body {
+		@media (max-width: $mobile) {
+			display: flex;
+			justify-content: flex-end;
+		}
+	}
+	// .menu__list
+
+	&__list {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		max-width: 850px;
+		padding: 18px;
+
+		@media (max-width: $mobile) {
+			position: absolute;
+			align-items: flex-start;
+			flex-direction: column;
+			transition: all 0.6s ease 0s;
+			left: -100%;
+			li:first-child {
+				display: none;
+			}
+		}
+		.menu-open & {
+			padding: 15px;
+			background: #f3f6ff;
+			transition: all 0.3s ease 0s;
+			left: -24px;
+		}
+	}
+
+	// .menu__link
+
+	&__link {
+		font-family: "Rubik", sans-serif;
+		color: #2d2d2d;
+		transition: all 0.3s ease 0s;
+		line-height: math.div(14, 20);
+		@media (max-width: $mobile) {
+			color: #2d2d2d;
+			font-weight: 600;
+		}
+		&:hover {
+			background-color: #fff;
+		}
+	}
+}
+
+.header-wrapper {
+	background: #f3f6ff;
+	@media (max-width: $mobile) {
+		background: #fff;
+	}
+}
 //====================================================================================================
 
 //Burger
-/*
+
 .icon-menu {
 	display: none;
 	@media (max-width: $mobile) {
 		display: block;
-		position: relative;
+		position: absolute;
+		top: 40%;
+		right: 27px;
 		width: rem(30);
 		height: rem(18);
-		z-index: 5;
+		z-index: 50;
+		border-radius: 8px;
 		@media (any-hover: none) {
 			cursor: default;
 		}
+		.burger-fon::before {
+			content: "";
+			position: absolute;
+			top: -15px;
+			left: 20px;
+			background-color: #1d8dd9;
+			width: 50px;
+			height: 50px;
+			z-index: 0;
+			border-radius: 8px;
+		}
+
 		span,
 		&::before,
 		&::after {
 			content: "";
 			transition: all 0.3s ease 0s;
-			right: 0;
+			right: -100%;
 			position: absolute;
 			width: 100%;
-			height: rem(2);
-			background-color: #000;
+			height: rem(3);
+			background-color: rgb(252, 252, 252);
+			z-index: 10;
 		}
 		&::before {
 			top: 0;
@@ -53,4 +130,3 @@
 		}
 	}
 }
-*/

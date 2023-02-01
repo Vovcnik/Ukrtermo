@@ -16,6 +16,9 @@ a:focus,
 a:active {
 	// outline: none;
 }
+a {
+	font-family: $fontFamily;
+}
 html,
 body {
 	height: 100%;
