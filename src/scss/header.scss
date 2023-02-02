@@ -1,6 +1,9 @@
 //====================================================================================================
+.header {
+}
 .menu {
 	position: relative;
+
 	@media (max-width: $mobile) {
 		height: 90px;
 	}
@@ -41,7 +44,6 @@
 	// .menu__link
 
 	&__link {
-		font-family: "Rubik", sans-serif;
 		color: #2d2d2d;
 		transition: all 0.3s ease 0s;
 		line-height: math.div(14, 20);
@@ -61,6 +63,53 @@
 		background: #fff;
 	}
 }
+
+.header-info {
+	font-family: $fontFamily;
+	background: #ffffff;
+	padding: 32px 18px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	// .header-info__logo
+
+	&__logo {
+		font-weight: 700;
+		font-size: 32px;
+		line-height: math.div(20, 32);
+		margin: 0px 44px 0px 0px;
+		font-family: $fontFamily;
+	}
+
+	// .header-info__text
+
+	&__text {
+		line-height: math.div(21, 14);
+	}
+
+	// .header-info__search
+
+	&__search {
+	}
+
+	// .header-info__telefon
+
+	&__telefon {
+	}
+
+	// .header-info__basket
+
+	&__basket {
+	}
+}
+.price {
+}
+
+// ._icon-shopping-cart-1
+
+._icon-shopping-cart-1 {
+}
+
 //====================================================================================================
 
 //Burger
