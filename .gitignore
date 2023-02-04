@@ -1,1 +1,10 @@
-node_modules
+componets
+package-lock.json
+node_modules/
+version.json
+dist
+dist/
+.gitignore
+**/*.rar
+**/*.zip
+Source/
