@@ -85,11 +85,16 @@
 
 	&__text {
 		line-height: math.div(21, 14);
+		margin: 0px 30px 0px 0px;
 	}
 
 	// .header-info__search
 
 	&__search {
+		border: 1px solid #818181;
+		border-radius: 10px;
+		padding: 10px 10px 10px 60px;
+		position: relative;
 	}
 
 	// .header-info__telefon

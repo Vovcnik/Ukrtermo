@@ -14,12 +14,16 @@
 		display: block;
 	}
 }
+
+._icon-shopping-cart-1:before {
+	content: "\e901";
+}
 ._icon-Polygon-1:before {
 	content: "\e900";
 }
 ._icon-Search:before {
 	content: "\e902";
-}
-._icon-shopping-cart-1:before {
-	content: "\e901";
+	position: absolute;
+	top: 0;
+	left: 0;
 }
