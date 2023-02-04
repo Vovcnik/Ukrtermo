@@ -159,8 +159,8 @@
 	._icon-shopping-cart-1 {
 		span {
 			position: absolute;
-			top: 12px;
-			right: 12px;
+			top: 8px;
+			right: 8px;
 			display: flex;
 			border-radius: 50px;
 			padding: 2px;
@@ -176,10 +176,10 @@
 		}
 		&::before {
 			position: absolute;
-			right: 17px;
-			top: 17px;
-			font-size: 25px;
-			font-weight: 600;
+			right: 15px;
+			top: 12px;
+			font-size: 29px;
+			font-weight: 500;
 		}
 	}
 }
@@ -208,6 +208,7 @@
 		transition: color 0.3s ease 0s;
 		padding: 18px;
 		text-align: center;
+		white-space: nowrap;
 		&:hover {
 			color: #1d8dd9;
 		}
@@ -217,9 +218,9 @@
 		height: 55px;
 		align-items: center;
 		justify-content: space-between;
-		max-width: 800px;
+		max-width: 754px;
 		li {
-			flex: 0 1 200px;
+			flex: 0 1 186px;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
@@ -227,7 +228,7 @@
 			&.active {
 				color: #ffffff;
 				background-color: #1d8dd9;
-				width: 100%;
+
 				height: 100%;
 				&:hover a {
 					color: #0c0c0c;
