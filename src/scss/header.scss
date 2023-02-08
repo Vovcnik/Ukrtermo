@@ -234,9 +234,6 @@
 			opacity: 1;
 			transform: scaleY(1);
 		}
-		& > li:last-child .subsubmenu {
-			text-align: right;
-		}
 	}
 }
 .link-button {
@@ -300,13 +297,13 @@
 				transition: all 0.3s ease 0s;
 			}
 		}
-	}
-	li:hover {
-		color: #ffffff;
-		background-color: #1d8dd9;
-		transition: all 0.1s ease 0s;
-		._icon-arrow:before {
-			transform: rotate(-90deg);
+		&:hover {
+			color: #ffffff;
+			background-color: #1d8dd9;
+			transition: all 0.1s ease 0s;
+			._icon-arrow:before {
+				transform: rotate(-90deg);
+			}
 		}
 	}
 }
@@ -353,6 +350,10 @@
 	opacity: 1;
 	transform: scaleY(1);
 	transition: all 0.5s ease 0s;
+}
+
+.submenu li:last-child {
+	background-color: #000;
 }
 //====================================================================================================
 
